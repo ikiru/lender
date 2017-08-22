@@ -1,0 +1,25 @@
+<!-- Login section -->
+      <div class="container">
+        <div class='col-sm-5'>
+            <form action="/sessions" method="post">
+              <div class="form group">
+                <input class="form-control" name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+                      <h1>Log In</h1>
+                <span class="email">Email:</span>
+                <input class="form-control" type="text" id="Email" name="email">
+
+
+              <div class="form group">
+                <span class="password">Password:</span>
+                <input class="form-control" type="text" name="password" id="Password">
+              </div>
+
+              <input type="submit" class="btn btn-primary" value="Log In">
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

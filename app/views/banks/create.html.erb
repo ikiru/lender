@@ -1,0 +1,111 @@
+<div class="row">
+  <div class="container">
+
+    <!-- bank section -->
+    <div class="col-sm-5">
+      <form action="/bank" method="post">
+        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+        <h1>Lender</h1>
+
+        <div class="form group">
+          <span class="firstname">First Name:</span>
+          <input class="form-control" type="text" id="Name" name="bank[firstname]">
+        </div>
+
+        <div class="form group">
+          <span class="lastname">Last Name:</span>
+          <input class="form-control" type="text" id="lastname" name="bank[lastname]">
+        </div>
+
+        <div class="form group">
+          <span class="email">Email:</span>
+          <input class="form-control" type="text" id="email" name="bank[email]">
+        </div>
+
+        <div class="form group">
+          <span class="password">Password:</span>
+          <input class="form-control" type="password" name="bank[password]" id="Password">
+        </div>
+
+        <div class="form group">
+          <span class="password_confirmation">Password Comfirmation:</span>
+          <input class="form-control" type="password" name="bank[password_confirmation]" id="Password_Confirmation">
+        </div>
+
+        <div class="form group">
+          <span class="money">Money:</span>
+          <select class="form-control" id ="money" name="bank[money]">
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+            <option value="600">600</option>
+            <option value="700">700</option>
+            <option value="800">800</option>
+            <option value="900">900</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Register">
+      </form>
+    </div>
+
+
+
+
+      <div class="container">
+
+        <!-- Registration section -->
+        <div class="col-sm-5">
+          <form action="/borrower" method="post">
+            <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+            <h1>Borrower</h1>
+
+            <div class="form group">
+              <span class="name">First Name:</span>
+              <input class="form-control" type="text" id="Name" name="borrow[name]">
+            </div>
+
+            <div class="form group">
+              <span class="alias">Last Name:</span>
+              <input class="form-control" type="text" id="Alias" name="borrow[alias]">
+            </div>
+
+            <div class="form group">
+              <span class="email">Email:</span>
+              <input class="form-control" type="text" id="Email" name="borrow[email]">
+            </div>
+
+            <div class="form group">
+              <span class="password">Password:</span>
+              <input class="form-control" type="password" name="borrow[password]" id="Password">
+            </div>
+
+            <div class="form group">
+              <span class="password_confirmation">Password Comfirmation:</span>
+              <input class="form-control" type="password" name="borrow[password_confirmation]" id="Password_Confirmation">
+            </div>
+
+
+            <div class="form group">
+              <span class="need">Need for the Money:</span>
+              <input class="form-control" type="text" id="need" name="borrow[need]">
+            </div>
+
+            <div class="form group">
+              <span class="description">Description:</span>
+              <input class="form-control" type="textarea" id="description" name="borrow[description]">
+            </div>
+
+
+
+            <input type="submit" class="btn btn-primary" value="Join">
+          </form>
+        </div>
+      </div>
+  </div>
+  </div>
